@@ -9,11 +9,26 @@ body {
 }
 
 .main {
-	color: white;
-	text-align: center;
-	h1 {
-		padding-top: 40vh;
+	padding-top: auto;
+	padding-bottom: auto;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 25vh;
+  border-radius: 25px;
+  height: 50vh;
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  overflow: hidden;
+
+	.logo {		
+		margin-top: 5vh;
+		padding: 10px;
+		height: 15vh;
+  	border-radius: 50%;
+		border: solid white;
 	}
+
 	.images {
 		img {
 			width: 60px;

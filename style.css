@@ -8,12 +8,25 @@ body {
 }
 
 .main {
+  padding-top: auto;
+  padding-bottom: auto;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 25vh;
+  border-radius: 25px;
+  height: 50vh;
+  background-color: #222222;
   color: white;
   text-align: center;
+  overflow: hidden;
 }
 
-.main h1 {
-  padding-top: 40vh;
+.main .logo {
+  margin-top: 5vh;
+  padding: 10px;
+  height: 15vh;
+  border-radius: 50%;
+  border: solid white;
 }
 
 .main .images img {
