@@ -8,6 +8,10 @@ body {
 	margin: 0;
 }
 
+h1, h3 {
+	text-decoration: underline;
+}
+
 .main {
 	padding-top: auto;
 	padding-bottom: auto;
@@ -33,7 +37,8 @@ body {
 		img {
 			width: 60px;
 			margin: 10px;
-			filter: invert(100%);
+
+			filter: invert(100%);	
 		}
 	}
 }

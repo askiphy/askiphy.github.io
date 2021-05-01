@@ -2,9 +2,13 @@
 body {
   background: url("https://picsum.photos/1000") center;
   background-size: cover;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   resize: none;
   margin: 0;
+}
+
+h1, h3 {
+  text-decoration: underline;
 }
 
 .main {
@@ -20,7 +24,6 @@ body {
   text-align: center;
   overflow: hidden;
 }
-
 .main .logo {
   margin-top: 5vh;
   padding: 10px;
@@ -28,10 +31,8 @@ body {
   border-radius: 50%;
   border: solid white;
 }
-
 .main .images img {
   width: 60px;
   margin: 10px;
   filter: invert(100%);
 }
-/*# sourceMappingURL=style.css.map */
