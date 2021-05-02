@@ -1,34 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap');
 
 body {
-	background: url("https://picsum.photos/1000") center;	
+	background: url('https://picsum.photos/1000') no-repeat center;	
   background-size: cover;
+  width: 100%;
+  height: 100vh;
 	font-family: 'Nunito', sans-serif;
 	resize: none;
-	margin: 0;
+	margin: 0;	
 }
 
 h1, h3 {
 	text-decoration: underline;
 }
 
-.main {
-	padding-top: auto;
-	padding-bottom: auto;
-	width: 50%;
-	margin-left: 25%;
-	margin-top: 25vh;
-  border-radius: 25px;
-  height: 50vh;
+.card {
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+
+	padding: 0.5em;	
+  border-radius: 10%;
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
   text-align: center;
   overflow: hidden;
 
-	.logo {		
-		margin-top: 5vh;
+	.logo {
 		padding: 10px;
-		height: 15vh;
+		height: 5cm;
   	border-radius: 50%;
 		border: solid white;
 	}
