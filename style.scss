@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap");
 
 body {
-  width: 100%;
-  height: 100vh;
   font-family: "Nunito", sans-serif;
-  resize: none;
   margin: 0;
 }
 
-h1, h3 {
+h1, h2 {
   text-decoration: underline;
+  text-decoration-thickness: 1mm;
 }
 
 .position {
@@ -36,8 +34,8 @@ h1, h3 {
 }
 
 .card {
-  padding: 0.5em;
-  border-radius: 10%;
+  padding: 1em;
+  border-radius: 1cm;
   background-color: #222222;
   color: white;
   text-align: center;
@@ -47,13 +45,15 @@ h1, h3 {
     padding: 10px;
     height: 5cm;
     border-radius: 50%;
-    border: solid white;
+    border: solid white 1mm;
   }
 
-  .images img {
-    width: 60px;
-    margin: 10px;
-    filter: invert(100%);
+  .images {
+    img {
+      width: 15mm;
+      margin: 2mm;
+      filter: invert(100%);      
+    }
   }
 }
 
