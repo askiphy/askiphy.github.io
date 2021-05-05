@@ -1,63 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap");
 
 body {
-	background: url('https://picsum.photos/1000') no-repeat center;	
-  background-size: cover;
   width: 100%;
   height: 100vh;
-	font-family: 'Nunito', sans-serif;
-	resize: none;
-	margin: 0;	
+  font-family: "Nunito", sans-serif;
+  resize: none;
+  margin: 0;
 }
 
 h1, h3 {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .position {
-	height: 100vh;
+  height: 100vh;
 
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-align-content: center;
-	-ms-flex-line-pack: center;
-	align-content: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card {
-	padding: 0.5em;	
+  padding: 0.5em;
   border-radius: 10%;
-  background-color: rgb(34, 34, 34);
-  color: rgb(255, 255, 255);
+  background-color: #222222;
+  color: white;
   text-align: center;
   overflow: hidden;
 
-	.logo {
-		padding: 10px;
-		height: 5cm;
-  	border-radius: 50%;
-		border: solid white;
-	}
+  .logo {
+    padding: 10px;
+    height: 5cm;
+    border-radius: 50%;
+    border: solid white;
+  }
 
-	.images {
-		img {
-			width: 60px;
-			margin: 10px;
+  .images img {
+    width: 60px;
+    margin: 10px;
+    filter: invert(100%);
+  }
+}
 
-			filter: invert(100%);	
-		}
-	}
+.block {
+  width: 20em;
+  border-radius: 1cm;
+  background-color: white;
+  margin: 5mm;
+  padding-bottom: 1cm;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  img {
+    border-radius: 1cm 1cm 0 0;
+    width: 20em;
+  }
+}
+
+.projects {
+  text-align: center;
+}
+
+body {
+  font-family: "Nunito", cursive;
 }
