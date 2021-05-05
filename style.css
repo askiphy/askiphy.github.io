@@ -72,3 +72,13 @@ align-content: space-around;
 -ms-flex-align: center;
 align-items: center;
 }
+.block img {
+    border-radius: 1cm 1cm 0 0;
+    width: 20em;
+}
+.projects {
+    text-align: center;
+}
+body {
+   font-family: "Nunito", cursive;
+}
