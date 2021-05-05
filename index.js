@@ -1,3 +1,5 @@
+'use strict';
+
 let h1text = document.getElementById("h1text");
 let h3text = document.getElementById("h3text");
 let image = document.getElementById("image");
