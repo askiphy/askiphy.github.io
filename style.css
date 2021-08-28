@@ -1,84 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap");
 body {
-  width: 100%;
-  height: 100vh;
-  font-family: "Nunito", sans-serif;
-  resize: none;
+  font-family: "Nunito", cursive;
   margin: 0;
 }
 
-h1, h3 {
-  text-decoration: underline;
+.background {
+  height: 100vh;
+  width: 100wh;
 }
 
 .position {
   height: 100vh;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  width: 100wh;
+  display: grid;
+  place-items: center;
 }
 
 .card {
-  padding: 0.5em;
-  border-radius: 10%;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1cm;
   background-color: #222222;
   color: white;
   text-align: center;
   overflow: hidden;
 }
+.card h1, .card h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 1mm;
+}
 .card .logo {
   padding: 10px;
   height: 5cm;
   border-radius: 50%;
-  border: solid white;
+  border: solid white 1mm;
 }
 .card .images img {
-  width: 60px;
-  margin: 10px;
+  width: 15mm;
+  margin: 2mm;
   filter: invert(100%);
 }
 
-.block {
-  width: 20em;
-  border-radius: 1cm;
-  background-color: white;
-  margin: 5mm;
-  padding-bottom: 1cm;
+.grid {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: distribute;
-  align-content: space-around;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.block img {
-  border-radius: 1cm 1cm 0 0;
-  width: 20em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .projects {
+  padding: 1px;
   text-align: center;
+  background-color: #1f1f1f;
+  color: white;
 }
 
-body {
-  font-family: "Nunito", cursive;
+.project {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #222222;
+}
+.project img {
+  border-radius: 1em;
+  width: 15em;
+}
+
+@media only screen and (max-device-width: 365px) {
+  .card {
+    background-color: none;
+  }
 }

@@ -1,17 +1,17 @@
 'use strict';
 
-let h1text = document.getElementById("h1text");
-let h3text = document.getElementById("h3text");
-let image = document.getElementById("image");
-let position = document.getElementById("position");
-
+let h1text = document.getElementById('h1text');
+let h2text = document.getElementById('h2text');
+let image = document.getElementById('image');
+let position = document.getElementById('background');
+let stepOfGradient = 22.5;
 let color = 0;
 
 setInterval(function () {
   h1text.style['text-decoration-color'] = `hsl(${color}, 100%, 50%)`;
-  h3text.style['text-decoration-color'] = `hsl(${color}, 100%, 50%)`;
+  h2text.style['text-decoration-color'] = `hsl(${color}, 100%, 50%)`;
   image.style['border-color'] = `hsl(${color}, 100%, 50%)`;
-  position.style['background'] = `linear-gradient(45deg, hsl(${color - 45}, 100%, 50%) 0%, hsl(${color}, 100%, 50%) 50%, hsl(${color + 45}, 100%, 50%) 100%)`;
+  position.style['background'] = `linear-gradient(45deg, hsl(${color - stepOfGradient * 2}, 100%, 50%) 0%, hsl(${color - stepOfGradient}, 100%, 50%) 25%, hsl(${color}, 100%, 50%) 50%, hsl(${color + stepOfGradient}, 100%, 50%) 75%, hsl(${color + stepOfGradient * 2}, 100%, 50%) 100%)`;
 
   color += 1;
 
