@@ -1,9 +1,9 @@
 'use strict';
 
-let h1text = document.getElementById("h1text");
-let h2text = document.getElementById("h2text");
-let image = document.getElementById("image");
-let position = document.getElementById("position");
+let h1text = document.getElementById('h1text');
+let h2text = document.getElementById('h2text');
+let image = document.getElementById('image');
+let position = document.getElementById('background');
 let stepOfGradient = 22.5;
 let color = 0;
 
