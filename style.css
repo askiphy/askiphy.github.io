@@ -25,7 +25,8 @@ body {
   text-align: center;
   overflow: hidden;
 }
-.card h1, .card h2 {
+.card h1,
+.card h2 {
   text-decoration: underline;
   text-decoration-thickness: 1mm;
 }
@@ -60,10 +61,37 @@ body {
   padding: 1em;
   border-radius: 1em;
   background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .project img {
   border-radius: 1em;
   width: 15em;
+}
+.project button {
+  background-color: #aa99ff;
+  border: none;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.bottom {
+  background-color: #181818;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.bottom .images img {
+  width: 15mm;
+  margin: 2mm;
+  filter: invert(100%);
 }
 
 @media only screen and (max-device-width: 365px) {

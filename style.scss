@@ -1,81 +1,116 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap');
 
 body {
-  font-family: "Nunito", cursive;
-  margin: 0;
+	font-family: 'Nunito', cursive;
+	margin: 0;
 }
 
 .background {
-  height: 100vh;
-  width: 100wh;
+	height: 100vh;
+	width: 100wh;
 }
 
 .position {
-  height: 100vh;
-  width: 100wh;
+	height: 100vh;
+	width: 100wh;
 
-  display: grid;
-  place-items: center;
+	display: grid;
+	place-items: center;
 }
 
 .card {
-  margin: 1em;
-  padding: 1em;
-  border-radius: 1cm;
-  background-color: #222222;
-  color: white;
-  text-align: center;
-  overflow: hidden;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 1cm;
+	background-color: #222222;
+	color: white;
+	text-align: center;
+	overflow: hidden;
 
-  h1, h2 {
-    text-decoration: underline;
-    text-decoration-thickness: 1mm;
-  }
+	h1,
+	h2 {
+		text-decoration: underline;
+		text-decoration-thickness: 1mm;
+	}
 
-  .logo {
-    padding: 10px;
-    height: 5cm;
-    border-radius: 50%;
-    border: solid white 1mm;
-  }
+	.logo {
+		padding: 10px;
+		height: 5cm;
+		border-radius: 50%;
+		border: solid white 1mm;
+	}
 
-  .images {
-    img {
-      width: 15mm;
-      margin: 2mm;
-      filter: invert(100%);      
-    }
-  }
+	.images {
+		img {
+			width: 15mm;
+			margin: 2mm;
+			filter: invert(100%);
+		}
+	}
 }
 
 .grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .projects {
-  padding: 1px;
-  text-align: center;
-  background-color: #1f1f1f;
-  color: white;
+	padding: 1px;
+	text-align: center;
+	background-color: #1f1f1f;
+	color: white;
 }
 
 .project {
-  margin: 1em;
-  padding: 1em;
-  border-radius: 1em;
-  background-color: #222222;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: #222222;
 
-  img {
-    border-radius: 1em;
-    width: 15em;
-  }
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		border-radius: 1em;
+		width: 15em;
+	}
+
+	button {
+		background-color: #aa99ff;
+		border: none;
+
+		padding: 1em;
+		border-radius: 1em;
+		margin: 1em;
+	}
+}
+
+.bottom {
+	background-color: rgb(24, 24, 24);
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+
+	.images {
+		img {
+			width: 15mm;
+			margin: 2mm;
+			filter: invert(100%);
+		}
+	}
 }
 
 @media only screen and (max-device-width: 365px) {
-  .card {
-    background-color: none;
-  }
+	.card {
+		background-color: none;
+	}
 }
