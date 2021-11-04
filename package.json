@@ -1,0 +1,19 @@
+{
+	"name": "bananchik204.github.io",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "live-server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bananchik204/Bananchik204.github.io.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Bananchik204/Bananchik204.github.io/issues"
+	},
+	"homepage": "Bananchik204.github.io",
+	"devDependencies": {
+		"live-server": "^1.2.1",
+		"prettier": "^2.4.1"
+	}
+}
